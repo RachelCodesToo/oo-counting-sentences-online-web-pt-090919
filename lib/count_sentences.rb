@@ -16,7 +16,7 @@ class String
 
   def count_sentences
     size_array = 
-    self.split.(/[.!?]/).reject(&:empty?).size
+    self.split(/[.!?]/).reject(&:empty?).size
   end
   
 end
