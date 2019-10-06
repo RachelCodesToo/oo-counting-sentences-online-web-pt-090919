@@ -15,7 +15,8 @@ class String
   end
 
   def count_sentences
-    self.split(" ").length
-    binding.pry
+    #self.split(" ").length
+    #binding.pry
+    (0..(string.length-1)).inject(1){|m,e| m += string[e].chr == ' ' ? 1 : 0 }
   end
 end
